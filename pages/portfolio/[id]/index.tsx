@@ -23,7 +23,7 @@ export default function Item({ portfolioItem }: ItemProps) {
   )
 }
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params }: any) {
   const url = `${PHOTOS_API_URL}${params.id}`
   const { data } = await axios.get<PortfolioItem[]>(url);
 
