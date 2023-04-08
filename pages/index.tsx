@@ -1,8 +1,6 @@
 import Layout from "@/components/layout/layout";
 
-export default function Home() {
-  const unusedVar = 12345;
-
+export default function Home({ unknownVar }) {
   return (
     <Layout>
       <p>
